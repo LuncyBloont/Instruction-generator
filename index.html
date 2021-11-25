@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMPUTER BINARY</title>
+        <style>
+            td {
+                /* border: 1px solid #121212;*/
+                width: 1.3cm;
+                padding: 0.2cm;
+                text-align: center;
+            }
+            table {
+                margin: 1cm;
+            }
+            .checkbox {
+                width: 100%;
+                height: 16px;
+                background: lightsalmon;
+                border: 2px solid #023;
+                display: inline-block;
+            }
+            input[type=checkbox] {
+                display: none;
+            }
+            input[type=text] {
+                margin: 2px;
+                border: 1px solid #000;
+                padding: 3px;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <th id="head">
+                
+            </th>
+            <tr id="name">
+
+            </tr>
+            <tr id="toggle">
+
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: left;">
+                    <input type="text" style="width: 70%;" id="hex" /> H
+                </td>
+                <td>
+                    <button onclick="hexToToggle()">反推</button>
+                </td>
+                <td>
+                    <button onclick="postHistory()">记录</button>
+                </td>
+                <td>
+                    <button onclick="copyHex()">复制</button>
+                </td>
+                <td>
+                    <button onclick="clearAllBits()">清空</button>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table>
+            <th>
+                <td style="vertical-align: top;">
+                    <div id="history" style="margin: 3cm; width: 64px;"></div>
+                </td>
+                <td>
+                    <img style="width: 1024px;" src="CS.png" />
+                </td>
+            </th>
+        </table>
+        <script src="./init.js"></script>
+    </body>
+</html>
